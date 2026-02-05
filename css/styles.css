@@ -1,0 +1,202 @@
+/* Custom styles for Hinamatsuri Festival */
+
+body {
+  box-sizing: border-box;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-japanese {
+  font-family: 'Noto Serif JP', serif;
+}
+
+.font-body {
+  font-family: 'Noto Serif JP', serif;
+}
+
+@keyframes sakura-fall {
+  0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+}
+
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(3deg); }
+}
+
+@keyframes wave {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(20px); }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sakura {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  background: radial-gradient(circle at 30% 30%, #FFB7C5, #FF9FB0);
+  border-radius: 50% 0 50% 0;
+  opacity: 0.8;
+  pointer-events: none;
+  animation: sakura-fall linear infinite;
+  z-index: 1;
+}
+
+.sakura::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: radial-gradient(circle at 30% 30%, #FFB7C5, #FF9FB0);
+  border-radius: 0 50% 0 50%;
+  top: -7px;
+  left: 7px;
+}
+
+.float-gentle {
+  animation: float-gentle 4s ease-in-out infinite;
+}
+
+.wave-motion {
+  animation: wave 8s ease-in-out infinite;
+}
+
+.fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #FF9FB0 0%, #FFB7C5 50%, #FFC9D1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+}
+
+.hero-bg {
+  background: linear-gradient(180deg, #FFF5F7 0%, #FFE4E9 50%, #FFD6DD 100%);
+  position: relative;
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255, 182, 193, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 192, 203, 0.15) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.card-japanese {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 183, 197, 0.3);
+  box-shadow: 0 8px 32px rgba(255, 159, 176, 0.15);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(255, 159, 176, 0.25);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #FF9FB0 0%, #FFB7C5 100%);
+  color: #5D1F28;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(255, 159, 176, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 159, 176, 0.4);
+}
+
+.nav-blur {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 245, 247, 0.95);
+  border-bottom: 1px solid rgba(255, 183, 197, 0.2);
+}
+
+.pattern-overlay {
+  background-image: none;
+}
+
+.lantern {
+  width: 60px;
+  height: 80px;
+  background: linear-gradient(to bottom, #FF9FB0, #FFB7C5);
+  border-radius: 50% 50% 45% 45%;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(255, 159, 176, 0.4);
+}
+
+.lantern::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 8px;
+  background: #8B4450;
+  border-radius: 4px;
+}
+
+.lantern::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 15px;
+  background: #FFD700;
+  border-radius: 0 0 50% 50%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.app-wrapper {
+  min-height: 100%;
+  width: 100%;
+}
+
+.text-primary {
+  color: #5D1F28;
+}
+
+.text-secondary {
+  color: #8B4450;
+}
+
+.border-primary {
+  border-color: #FFB7C5;
+}
+
+@view-transition {
+  navigation: auto;
+}
