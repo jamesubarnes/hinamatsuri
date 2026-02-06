@@ -75,15 +75,23 @@
           <p class="font-japanese text-3xl md:text-5xl mb-2 gradient-text font-light" id="hero-subtitle">ひな祭り</p>
           <p class="text-lg md:text-xl text-secondary mb-6 italic font-light">(Hinamatsuri)</p>
           <p class="text-xl md:text-2xl text-secondary mb-6 max-w-2xl mx-auto font-light" id="hero-tagline">Reimagining the Japanese traditional Girls' Festival through a contemporary, all-gender, multi-cultural lens.</p>
-          <p class="text-2xl md:text-3xl text-primary mb-2 font-bold" id="hero-date" style="color: rgb(93, 31, 40);">March 21st & 22nd (Sat & Sun) 2026</p>
+          <p class="text-3xl md:text-4xl text-primary mb-2 font-bold" id="hero-date" style="color: rgb(93, 31, 40);">March 21st & 22nd (Sat & Sun) 2026</p>
           <p class="text-lg md:text-xl text-secondary mb-8 flex items-center justify-center gap-2 font-semibold" id="hero-location">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
             </svg>
             Geelong West Neighbourhood House, 89 Autumn St, Geelong West VIC 3218
           </p>
-          <!-- Decorative Art Elements -->
-          <div class="absolute left-4 md:left-12 top-1/2 transform -translate-y-1/2 opacity-40 float-gentle" style="animation-delay: 0.2s;">
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <button class="btn-primary px-10 py-4 rounded-full font-bold text-lg" onclick="document.getElementById('tickets-modal').classList.remove('hidden')" style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
+              📝 Register Now (Free)
+            </button>
+            <a href="#schedule" class="px-10 py-4 rounded-full border-2 border-primary text-primary font-semibold text-lg hover:bg-pink-50 transition-colors" onclick="showPage('home')" style="color: rgb(93, 31, 40);">
+              View Program
+            </a>
+          </div>
+          <!-- Decorative Art Elements - Desktop: absolute sides, Mobile: inline below buttons -->
+          <div class="hidden md:block absolute left-4 md:left-12 top-1/2 transform -translate-y-1/2 opacity-40 float-gentle" style="animation-delay: 0.2s;">
             <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="60" cy="60" r="50" fill="#FFB7C5" opacity="0.3"></circle>
               <text x="60" y="50" font-size="28" text-anchor="middle" fill="#5D1F28">🎟️</text>
@@ -91,7 +99,7 @@
               <text x="60" y="95" font-size="10" text-anchor="middle" fill="#5D1F28">ENTRY</text>
             </svg>
           </div>
-          <div class="absolute right-4 md:right-12 top-1/2 transform -translate-y-1/2 opacity-40 float-gentle" style="animation-delay: 0.5s;">
+          <div class="hidden md:block absolute right-4 md:right-12 top-1/2 transform -translate-y-1/2 opacity-40 float-gentle" style="animation-delay: 0.5s;">
             <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="60" cy="60" r="50" fill="#FF9FB0" opacity="0.3"></circle>
               <text x="60" y="50" font-size="28" text-anchor="middle" fill="#5D1F28">🤗</text>
@@ -99,13 +107,23 @@
               <text x="60" y="95" font-size="10" text-anchor="middle" fill="#5D1F28">WELCOME</text>
             </svg>
           </div>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <button class="btn-primary px-10 py-4 rounded-full font-bold text-lg" onclick="document.getElementById('tickets-modal').classList.remove('hidden')" style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
-              📝 Register Now (Free)
-            </button>
-            <a href="#schedule" class="px-10 py-4 rounded-full border-2 border-primary text-primary font-semibold text-lg hover:bg-pink-50 transition-colors" onclick="showPage('home')" style="color: rgb(93, 31, 40);">
-              View Program
-            </a>
+          <div class="flex md:hidden justify-center gap-6 mb-8 opacity-50">
+            <div class="float-gentle" style="animation-delay: 0.2s;">
+              <svg width="100" height="100" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="60" r="50" fill="#FFB7C5" opacity="0.3"></circle>
+                <text x="60" y="50" font-size="28" text-anchor="middle" fill="#5D1F28">🎟️</text>
+                <text x="60" y="80" font-size="12" font-weight="bold" text-anchor="middle" fill="#5D1F28">FREE</text>
+                <text x="60" y="95" font-size="10" text-anchor="middle" fill="#5D1F28">ENTRY</text>
+              </svg>
+            </div>
+            <div class="float-gentle" style="animation-delay: 0.5s;">
+              <svg width="100" height="100" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="60" r="50" fill="#FF9FB0" opacity="0.3"></circle>
+                <text x="60" y="50" font-size="28" text-anchor="middle" fill="#5D1F28">🤗</text>
+                <text x="60" y="80" font-size="11" font-weight="bold" text-anchor="middle" fill="#5D1F28">EVERYONE</text>
+                <text x="60" y="95" font-size="10" text-anchor="middle" fill="#5D1F28">WELCOME</text>
+              </svg>
+            </div>
           </div>
           <!-- Countdown -->
           <div class="mt-16 grid grid-cols-4 gap-4 max-w-lg mx-auto">
