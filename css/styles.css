@@ -2,6 +2,8 @@
 
 body {
   box-sizing: border-box;
+  background: linear-gradient(#FFF5F7 0%, rgba(255, 245, 247, 0.867) 100%);
+  font-size: 16px;
 }
 
 .font-display {
@@ -76,6 +78,7 @@ body {
   background-clip: text;
   font-family: 'Dancing Script', cursive;
   font-weight: 600;
+  text-shadow: 2px 2px 8px rgba(255, 159, 176, 0.4);
 }
 
 .hero-bg {
@@ -97,7 +100,7 @@ body {
 }
 
 .card-japanese {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.867);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 183, 197, 0.3);
   box-shadow: 0 8px 32px rgba(255, 159, 176, 0.15);
