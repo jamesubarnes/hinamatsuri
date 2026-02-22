@@ -17,8 +17,11 @@ body {
 }
 
 @keyframes sakura-fall {
-  0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
-  100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+  0% { transform: translateY(-10vh) translateX(0) rotate(0deg); opacity: 1; }
+  25% { transform: translateY(25vh) translateX(15px) rotate(90deg); opacity: 0.9; }
+  50% { transform: translateY(55vh) translateX(-10px) rotate(180deg); opacity: 0.7; }
+  75% { transform: translateY(80vh) translateX(20px) rotate(270deg); opacity: 0.4; }
+  100% { transform: translateY(110vh) translateX(5px) rotate(360deg); opacity: 0; }
 }
 
 @keyframes float-gentle {
@@ -44,25 +47,14 @@ body {
 
 .sakura {
   position: fixed;
-  width: 15px;
-  height: 15px;
-  background: radial-gradient(circle at 30% 30%, #FFB7C5, #FF9FB0);
-  border-radius: 50% 0 50% 0;
-  opacity: 0.8;
+  width: 12px;
+  height: 16px;
+  background: radial-gradient(circle at 40% 30%, #FFD6DD, #FFB7C5 40%, #FF9FB0);
+  border-radius: 50% 50% 50% 0;
+  opacity: 0.7;
   pointer-events: none;
   animation: sakura-fall linear infinite;
   z-index: 1;
-}
-
-.sakura::before {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background: radial-gradient(circle at 30% 30%, #FFB7C5, #FF9FB0);
-  border-radius: 0 50% 0 50%;
-  top: -7px;
-  left: 7px;
 }
 
 .float-gentle {
