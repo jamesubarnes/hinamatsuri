@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,14 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Serif+JP:wght@300;400;600&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Serif+JP:wght@300;400;600&family=Dancing+Script:wght@400;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="font-body h-full overflow-auto" style="background: linear-gradient(rgb(255, 245, 247) 0%, rgba(255, 245, 247, 0.867) 100%); font-size: 16px;">
+
+<body class="font-body h-full overflow-auto"
+  style="background: linear-gradient(rgb(255, 245, 247) 0%, rgba(255, 245, 247, 0.867) 100%); font-size: 16px;">
   <div class="app-wrapper hero-bg relative">
     <!-- Falling Sakura Petals -->
     <div id="sakura-container" class="fixed inset-0 pointer-events-none overflow-hidden"></div>
@@ -21,22 +26,31 @@
         <div class="flex items-center gap-3">
           <div class="text-3xl">🎎</div>
           <div>
-            <div class="font-display text-xl font-bold text-primary" id="nav-logo" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">
-              Japanese Girls' Festival <span class="gradient-text" style="text-shadow: 2px 2px 8px rgba(255, 159, 176, 0.4);">Reimagined</span>
+            <div class="font-display text-xl font-bold text-primary" id="nav-logo"
+              style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">
+              Japanese Girls' Festival <span class="gradient-text"
+                style="text-shadow: 2px 2px 8px rgba(255, 159, 176, 0.4);">Reimagined</span>
             </div>
             <div class="font-japanese text-xs text-secondary" id="nav-subtitle">ひな祭り</div>
           </div>
         </div>
         <div class="hidden md:flex items-center gap-8">
-          <a href="#home" class="text-secondary hover:text-primary transition-colors font-light" onclick="showPage('home')">Home</a>
-          <a href="#schedule" class="text-secondary hover:text-primary transition-colors font-light" onclick="showPage('home')">Program</a>
-          <a href="#get-involved" class="text-secondary hover:text-primary transition-colors font-light" onclick="showPage('get-involved')">Get Involved</a>
-          <a href="#support" class="text-secondary hover:text-primary transition-colors font-light" onclick="showPage('support')">Support</a>
-          <button class="btn-primary px-6 py-2 rounded-full font-semibold" onclick="document.getElementById('tickets-modal').classList.remove('hidden')" style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
+          <a href="#home" class="text-secondary hover:text-primary transition-colors font-light"
+            onclick="showPage('home')">Home</a>
+          <a href="#schedule" class="text-secondary hover:text-primary transition-colors font-light"
+            onclick="showPage('home')">Program</a>
+          <a href="#get-involved" class="text-secondary hover:text-primary transition-colors font-light"
+            onclick="showPage('get-involved')">Get Involved</a>
+          <a href="#support" class="text-secondary hover:text-primary transition-colors font-light"
+            onclick="showPage('support')">Support</a>
+          <a href="https://events.humanitix.com/hinamatsuri2026" target="_blank"
+            class="btn-primary px-6 py-2 rounded-full font-semibold"
+            style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
             Registration
-          </button>
+          </a>
         </div>
-        <button class="md:hidden text-primary" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" style="color: rgb(93, 31, 40);">
+        <button class="md:hidden text-primary"
+          onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" style="color: rgb(93, 31, 40);">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
@@ -45,13 +59,19 @@
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 border-t border-pink-200">
         <div class="flex flex-col gap-4 pt-4">
-          <a href="#home" class="text-secondary hover:text-primary transition-colors" onclick="showPage('home')">Home</a>
-          <a href="#schedule" class="text-secondary hover:text-primary transition-colors" onclick="showPage('home')">Program</a>
-          <a href="#get-involved" class="text-secondary hover:text-primary transition-colors" onclick="showPage('get-involved')">Get Involved</a>
-          <a href="#support" class="text-secondary hover:text-primary transition-colors" onclick="showPage('support')">Support</a>
-          <button class="btn-primary px-6 py-2 rounded-full font-semibold w-full" onclick="document.getElementById('tickets-modal').classList.remove('hidden')" style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
+          <a href="#home" class="text-secondary hover:text-primary transition-colors"
+            onclick="showPage('home')">Home</a>
+          <a href="#schedule" class="text-secondary hover:text-primary transition-colors"
+            onclick="showPage('home')">Program</a>
+          <a href="#get-involved" class="text-secondary hover:text-primary transition-colors"
+            onclick="showPage('get-involved')">Get Involved</a>
+          <a href="#support" class="text-secondary hover:text-primary transition-colors"
+            onclick="showPage('support')">Support</a>
+          <a href="https://events.humanitix.com/hinamatsuri2026" target="_blank"
+            class="btn-primary px-6 py-2 rounded-full font-semibold w-full text-center"
+            style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
             Registration
-          </button>
+          </a>
         </div>
       </div>
     </nav>
@@ -69,29 +89,42 @@
             <span class="float-gentle" style="animation-delay: 0.3s;">🎎</span>
             <span class="float-gentle" style="animation-delay: 0.6s;">🌸</span>
           </div>
-          <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-8 text-primary leading-tight" id="hero-title" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">
-            Japanese Girls' Festival <span class="gradient-text" style="text-shadow: 2px 2px 8px rgba(255, 159, 176, 0.4);">Reimagined</span>
+          <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-8 text-primary leading-tight"
+            id="hero-title" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">
+            Japanese Girls' Festival <span class="gradient-text"
+              style="text-shadow: 2px 2px 8px rgba(255, 159, 176, 0.4);">Reimagined</span>
           </h1>
           <p class="font-japanese text-3xl md:text-5xl mb-2 gradient-text font-light" id="hero-subtitle">ひな祭り</p>
           <p class="text-lg md:text-xl text-secondary mb-6 italic font-light">(Hinamatsuri)</p>
-          <p class="text-xl md:text-2xl text-secondary mb-6 max-w-2xl mx-auto font-light" id="hero-tagline">Reimagining the Japanese traditional Girls' Festival through a contemporary, all-gender, multi-cultural lens.</p>
-          <p class="text-3xl md:text-4xl text-primary mb-2 font-bold" id="hero-date" style="color: rgb(93, 31, 40);">March 21st & 22nd (Sat & Sun) 2026</p>
-          <p class="text-lg md:text-xl text-secondary mb-8 flex items-center justify-center gap-2 font-semibold" id="hero-location">
+          <p class="text-xl md:text-2xl text-secondary mb-6 max-w-2xl mx-auto font-light" id="hero-tagline">Reimagining
+            the Japanese traditional Girls' Festival through a contemporary, all-gender, multi-cultural lens.</p>
+          <p class="text-3xl md:text-4xl text-primary mb-2 font-bold" id="hero-date" style="color: rgb(93, 31, 40);">
+            March 21st & 22nd (Sat & Sun) 2026</p>
+          <p class="text-lg md:text-xl text-secondary mb-8 flex items-center justify-center gap-2 font-semibold"
+            id="hero-location">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+              <path fill-rule="evenodd"
+                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                clip-rule="evenodd"></path>
             </svg>
             Geelong West Neighbourhood House, 89 Autumn St, Geelong West VIC 3218
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <button class="btn-primary px-10 py-4 rounded-full font-bold text-lg" onclick="document.getElementById('tickets-modal').classList.remove('hidden')" style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
+            <a href="https://events.humanitix.com/hinamatsuri2026" target="_blank"
+              class="btn-primary px-10 py-4 rounded-full font-bold text-lg"
+              style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
               📝 Register Now (Free)
-            </button>
-            <a href="#schedule" class="px-10 py-4 rounded-full border-2 border-primary text-primary font-semibold text-lg hover:bg-pink-50 transition-colors" onclick="showPage('home')" style="color: rgb(93, 31, 40);">
+            </a>
+            <a href="#schedule"
+              class="px-10 py-4 rounded-full border-2 border-primary text-primary font-semibold text-lg hover:bg-pink-50 transition-colors"
+              onclick="showPage('home')" style="color: rgb(93, 31, 40);">
               View Program
             </a>
           </div>
           <!-- Decorative Art Elements - Desktop: absolute sides, Mobile: inline below buttons -->
-          <div class="hidden md:block absolute left-4 md:left-12 top-1/2 transform -translate-y-1/2 opacity-40 float-gentle" style="animation-delay: 0.2s;">
+          <div
+            class="hidden md:block absolute left-4 md:left-12 top-1/2 transform -translate-y-1/2 opacity-40 float-gentle"
+            style="animation-delay: 0.2s;">
             <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="60" cy="60" r="50" fill="#FFB7C5" opacity="0.3"></circle>
               <text x="60" y="50" font-size="28" text-anchor="middle" fill="#5D1F28">🎟️</text>
@@ -99,7 +132,9 @@
               <text x="60" y="95" font-size="10" text-anchor="middle" fill="#5D1F28">ENTRY</text>
             </svg>
           </div>
-          <div class="hidden md:block absolute right-4 md:right-12 top-1/2 transform -translate-y-1/2 opacity-40 float-gentle" style="animation-delay: 0.5s;">
+          <div
+            class="hidden md:block absolute right-4 md:right-12 top-1/2 transform -translate-y-1/2 opacity-40 float-gentle"
+            style="animation-delay: 0.5s;">
             <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="60" cy="60" r="50" fill="#FF9FB0" opacity="0.3"></circle>
               <text x="60" y="50" font-size="28" text-anchor="middle" fill="#5D1F28">🤗</text>
@@ -120,7 +155,8 @@
               <svg width="100" height="100" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="60" cy="60" r="50" fill="#FF9FB0" opacity="0.3"></circle>
                 <text x="60" y="50" font-size="28" text-anchor="middle" fill="#5D1F28">🤗</text>
-                <text x="60" y="80" font-size="11" font-weight="bold" text-anchor="middle" fill="#5D1F28">EVERYONE</text>
+                <text x="60" y="80" font-size="11" font-weight="bold" text-anchor="middle"
+                  fill="#5D1F28">EVERYONE</text>
                 <text x="60" y="95" font-size="10" text-anchor="middle" fill="#5D1F28">WELCOME</text>
               </svg>
             </div>
@@ -128,19 +164,23 @@
           <!-- Countdown -->
           <div class="mt-16 grid grid-cols-4 gap-4 max-w-lg mx-auto">
             <div class="card-japanese rounded-2xl p-4" style="background: rgba(255, 255, 255, 0.867);">
-              <div class="text-3xl md:text-4xl font-display font-bold text-primary" id="countdown-days" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">00</div>
+              <div class="text-3xl md:text-4xl font-display font-bold text-primary" id="countdown-days"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">00</div>
               <div class="text-sm text-secondary font-light">Days</div>
             </div>
             <div class="card-japanese rounded-2xl p-4" style="background: rgba(255, 255, 255, 0.867);">
-              <div class="text-3xl md:text-4xl font-display font-bold text-primary" id="countdown-hours" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">00</div>
+              <div class="text-3xl md:text-4xl font-display font-bold text-primary" id="countdown-hours"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">00</div>
               <div class="text-sm text-secondary font-light">Hours</div>
             </div>
             <div class="card-japanese rounded-2xl p-4" style="background: rgba(255, 255, 255, 0.867);">
-              <div class="text-3xl md:text-4xl font-display font-bold text-primary" id="countdown-mins" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">00</div>
+              <div class="text-3xl md:text-4xl font-display font-bold text-primary" id="countdown-mins"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">00</div>
               <div class="text-sm text-secondary font-light">Minutes</div>
             </div>
             <div class="card-japanese rounded-2xl p-4" style="background: rgba(255, 255, 255, 0.867);">
-              <div class="text-3xl md:text-4xl font-display font-bold text-primary" id="countdown-secs" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">00</div>
+              <div class="text-3xl md:text-4xl font-display font-bold text-primary" id="countdown-secs"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">00</div>
               <div class="text-sm text-secondary font-light">Seconds</div>
             </div>
           </div>
@@ -152,29 +192,50 @@
         <div class="max-w-6xl mx-auto">
           <div class="text-center mb-16">
             <p class="font-japanese text-lg text-secondary mb-2">伝統とリアル</p>
-            <h2 class="font-display text-4xl md:text-6xl font-bold mb-2 text-primary" id="about-title" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">About Hinamatsuri</h2>
+            <h2 class="font-display text-4xl md:text-6xl font-bold mb-2 text-primary" id="about-title"
+              style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">About Hinamatsuri</h2>
             <p class="text-4xl gradient-text mb-6 font-light">Japanese Girls' Festival</p>
-            <p class="text-xl text-secondary max-w-3xl mx-auto leading-relaxed font-light mb-8">Join us in transforming the Japanese Girls' Festival into a vibrant cultural exploration that welcomes people of all genders, including men, boys, and LGBTQIA+ communities!</p>
+            <p class="text-xl text-secondary max-w-3xl mx-auto leading-relaxed font-light mb-8">Join us in transforming
+              the Japanese Girls' Festival into a vibrant cultural exploration that welcomes people of all genders,
+              including men, boys, and LGBTQIA+ communities!</p>
             <div class="max-w-4xl mx-auto text-left space-y-6 text-secondary leading-relaxed">
-              <p class="font-light">Hinamatsuri (a.k.a. Girls' Day or Doll's Day) is a special celebration of Japanese culture honoring girls' happiness, health, and growth. Our "Hinamatsuri-Reimagined" Festival blends tradition with bold modernity, celebrating Japanese culture through the lens of contemporary gender equality, multiculturalism, diversity and inclusion.</p>
-              <p class="font-light">While honouring the thousand-year-old tradition of celebrating grace and beauty, and praying for the safety and protection of women and girls, our version of Hinamatsuri also wishes to embrace the empowerment and independence of women and girls in Australia today. We create space for reflection around a central question:</p>
-              <p class="text-center text-xl italic text-primary font-light" style="color: rgb(93, 31, 40);">"What does happiness mean for girls and women today?"</p>
-              <p class="font-light">Timed near International Women's Day, our celebration sparks inter-generational dialogue, honouring the past while amplifying voices shaping the future.</p>
-              <p class="text-primary text-lg" style="color: rgb(93, 31, 40);"><strong>We warmly invite men, boys, LGBTQIA+ communities, and people of all cultural backgrounds, especially those who are not Japanese, to join us.</strong> Meaningful cultural exchange happens when everyone shows up!</p>
+              <p class="font-light">Hinamatsuri (a.k.a. Girls' Day or Doll's Day) is a special celebration of Japanese
+                culture honoring girls' happiness, health, and growth. Our "Hinamatsuri-Reimagined" Festival blends
+                tradition with bold modernity, celebrating Japanese culture through the lens of contemporary gender
+                equality, multiculturalism, diversity and inclusion.</p>
+              <p class="font-light">While honouring the thousand-year-old tradition of celebrating grace and beauty, and
+                praying for the safety and protection of women and girls, our version of Hinamatsuri also wishes to
+                embrace the empowerment and independence of women and girls in Australia today. We create space for
+                reflection around a central question:</p>
+              <p class="text-center text-xl italic text-primary font-light" style="color: rgb(93, 31, 40);">"What does
+                happiness mean for girls and women today?"</p>
+              <p class="font-light">Timed near International Women's Day, our celebration sparks inter-generational
+                dialogue, honouring the past while amplifying voices shaping the future.</p>
+              <p class="text-primary text-lg" style="color: rgb(93, 31, 40);"><strong>We warmly invite men, boys,
+                  LGBTQIA+ communities, and people of all cultural backgrounds, especially those who are not Japanese,
+                  to join us.</strong> Meaningful cultural exchange happens when everyone shows up!</p>
             </div>
           </div>
           <div class="grid md:grid-cols-3 gap-8">
-            <div class="card-japanese rounded-3xl p-8 text-center card-hover" style="background: rgba(255, 255, 255, 0.867);">
+            <div class="card-japanese rounded-3xl p-8 text-center card-hover"
+              style="background: rgba(255, 255, 255, 0.867);">
               <div class="text-6xl mb-6">🎨</div>
-              <h3 class="font-display text-2xl font-bold mb-4 text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Art & Craft Space</h3>
+              <h3 class="font-display text-2xl font-bold mb-4 text-primary"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Art & Craft Space</h3>
             </div>
-            <div class="card-japanese rounded-3xl p-8 text-center card-hover" style="background: rgba(255, 255, 255, 0.867);">
+            <div class="card-japanese rounded-3xl p-8 text-center card-hover"
+              style="background: rgba(255, 255, 255, 0.867);">
               <div class="text-6xl mb-6">🍡</div>
-              <h3 class="font-display text-2xl font-bold mb-4 text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Inclusive Festival Foods (Japanese & multicultural)</h3>
+              <h3 class="font-display text-2xl font-bold mb-4 text-primary"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Inclusive Festival Foods
+                (Japanese & multicultural)</h3>
             </div>
-            <div class="card-japanese rounded-3xl p-8 text-center card-hover" style="background: rgba(255, 255, 255, 0.867);">
+            <div class="card-japanese rounded-3xl p-8 text-center card-hover"
+              style="background: rgba(255, 255, 255, 0.867);">
               <div class="text-6xl mb-6">🍵🍃</div>
-              <h3 class="font-display text-2xl font-bold mb-4 text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Zen Culture & Mindfulness Workshops (Japanese & Multicultural)</h3>
+              <h3 class="font-display text-2xl font-bold mb-4 text-primary"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Zen Culture & Mindfulness
+                Workshops (Japanese & Multicultural)</h3>
             </div>
           </div>
         </div>
@@ -185,11 +246,17 @@
         <div class="max-w-6xl mx-auto">
           <div class="text-center mb-16">
             <p class="font-japanese text-lg text-secondary mb-2">プログラム</p>
-            <h2 class="font-display text-4xl md:text-6xl font-bold mb-6 text-primary" id="schedule-title" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Festival Program</h2>
-            <div class="card-japanese rounded-3xl p-12 max-w-2xl mx-auto" style="background: rgba(255, 255, 255, 0.867);">
-              <h3 class="font-display text-3xl font-bold mb-4 text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Full Program Details</h3>
-              <p class="text-secondary mb-8 font-light leading-relaxed">View our complete festival schedule including performances, workshops, cultural activities, and more!</p>
-              <a href="coming-soon.html" target="_blank" rel="noopener noreferrer" class="btn-primary inline-block px-10 py-4 rounded-full font-bold text-lg" style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
+            <h2 class="font-display text-4xl md:text-6xl font-bold mb-6 text-primary" id="schedule-title"
+              style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Festival Program</h2>
+            <div class="card-japanese rounded-3xl p-12 max-w-2xl mx-auto"
+              style="background: rgba(255, 255, 255, 0.867);">
+              <h3 class="font-display text-3xl font-bold mb-4 text-primary"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Full Program Details</h3>
+              <p class="text-secondary mb-8 font-light leading-relaxed">View our complete festival schedule including
+                performances, workshops, cultural activities, and more!</p>
+              <a href="coming-soon.html" target="_blank" rel="noopener noreferrer"
+                class="btn-primary inline-block px-10 py-4 rounded-full font-bold text-lg"
+                style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
                 View Program →
               </a>
             </div>
@@ -202,17 +269,24 @@
         <div class="max-w-6xl mx-auto">
           <div class="text-center mb-16">
             <p class="font-japanese text-lg text-secondary mb-2">場所</p>
-            <h2 class="font-display text-4xl md:text-6xl font-bold mb-6 text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Venue</h2>
+            <h2 class="font-display text-4xl md:text-6xl font-bold mb-6 text-primary"
+              style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Venue</h2>
             <p class="text-xl text-secondary font-light">On Vibrant Pako Street</p>
           </div>
           <div class="grid md:grid-cols-2 gap-8">
             <!-- Map Placeholder -->
-            <div class="card-japanese rounded-3xl p-8 flex items-center justify-center min-h-[300px]" style="background: rgba(255, 255, 255, 0.867);">
+            <div class="card-japanese rounded-3xl p-8 flex items-center justify-center min-h-[300px]"
+              style="background: rgba(255, 255, 255, 0.867);">
               <div class="text-center">
                 <div class="text-6xl mb-4">🗺️</div>
-                <h3 class="font-display text-2xl font-bold mb-2 text-primary" id="location-name" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Geelong West Neighbourhood House</h3>
+                <h3 class="font-display text-2xl font-bold mb-2 text-primary" id="location-name"
+                  style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Geelong West Neighbourhood
+                  House</h3>
                 <p class="text-secondary mb-4 font-light">89 Autumn St<br>Geelong West VIC 3218</p>
-                <a href="https://www.google.com/maps/search/?api=1&query=89+Autumn+St+Geelong+West+VIC+3218" target="_blank" rel="noopener noreferrer" class="btn-primary inline-block px-6 py-3 rounded-full font-semibold" style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
+                <a href="https://www.google.com/maps/search/?api=1&query=89+Autumn+St+Geelong+West+VIC+3218"
+                  target="_blank" rel="noopener noreferrer"
+                  class="btn-primary inline-block px-6 py-3 rounded-full font-semibold"
+                  style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
                   Open in Maps →
                 </a>
               </div>
@@ -224,7 +298,8 @@
                   <div class="text-3xl">🚂</div>
                   <div>
                     <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">By Train</h4>
-                    <p class="text-secondary font-light">Geelong Station (15 min walk) - Regular services from Melbourne</p>
+                    <p class="text-secondary font-light">Geelong Station (15 min walk) - Regular services from Melbourne
+                    </p>
                   </div>
                 </div>
               </div>
@@ -233,7 +308,8 @@
                   <div class="text-3xl">🚌</div>
                   <div>
                     <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">By Bus</h4>
-                    <p class="text-secondary font-light">Route 1 (12 mins) or Route 25 (18 mins) from Geelong Station</p>
+                    <p class="text-secondary font-light">Route 1 (12 mins) or Route 25 (18 mins) from Geelong Station
+                    </p>
                   </div>
                 </div>
               </div>
@@ -251,7 +327,8 @@
                   <div class="text-3xl">♿</div>
                   <div>
                     <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">Accessibility</h4>
-                    <p class="text-secondary font-light">Wheelchair accessible venue with ramps and accessible facilities</p>
+                    <p class="text-secondary font-light">Wheelchair accessible venue with ramps and accessible
+                      facilities</p>
                   </div>
                 </div>
               </div>
@@ -265,28 +342,37 @@
         <div class="max-w-6xl mx-auto">
           <div class="text-center mb-16">
             <p class="font-japanese text-lg text-secondary mb-2">参加する</p>
-            <h2 class="font-display text-4xl md:text-6xl font-bold mb-6 text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Get Involved</h2>
-            <p class="text-xl text-secondary font-light max-w-2xl mx-auto">Join us in creating a memorable celebration! We welcome volunteers, vendors, performers, and partners.</p>
+            <h2 class="font-display text-4xl md:text-6xl font-bold mb-6 text-primary"
+              style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Get Involved</h2>
+            <p class="text-xl text-secondary font-light max-w-2xl mx-auto">Join us in creating a memorable celebration!
+              We welcome volunteers, vendors, performers, and partners.</p>
           </div>
           <div class="grid md:grid-cols-3 gap-6 mb-12">
-            <div class="card-japanese rounded-3xl p-6 text-center card-hover" style="background: rgba(255, 255, 255, 0.867);">
+            <div class="card-japanese rounded-3xl p-6 text-center card-hover"
+              style="background: rgba(255, 255, 255, 0.867);">
               <div class="text-5xl mb-4">👩‍🎨</div>
-              <h3 class="font-display text-xl font-bold mb-3 text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Share Your Talents</h3>
+              <h3 class="font-display text-xl font-bold mb-3 text-primary"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Share Your Talents</h3>
               <p class="text-secondary text-sm font-light mb-4">Facilitators, performers, and speakers wanted</p>
             </div>
-            <div class="card-japanese rounded-3xl p-6 text-center card-hover" style="background: rgba(255, 255, 255, 0.867);">
+            <div class="card-japanese rounded-3xl p-6 text-center card-hover"
+              style="background: rgba(255, 255, 255, 0.867);">
               <div class="text-5xl mb-4">🛍️</div>
-              <h3 class="font-display text-xl font-bold mb-3 text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Vendors &amp; Stall Holders</h3>
+              <h3 class="font-display text-xl font-bold mb-3 text-primary"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Vendors &amp; Stall Holders</h3>
               <p class="text-secondary text-sm font-light mb-4">Food providers and market stallholders welcome</p>
             </div>
-            <div class="card-japanese rounded-3xl p-6 text-center card-hover" style="background: rgba(255, 255, 255, 0.867);">
+            <div class="card-japanese rounded-3xl p-6 text-center card-hover"
+              style="background: rgba(255, 255, 255, 0.867);">
               <div class="text-5xl mb-4">🤝</div>
-              <h3 class="font-display text-xl font-bold mb-3 text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Volunteer With Us</h3>
+              <h3 class="font-display text-xl font-bold mb-3 text-primary"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Volunteer With Us</h3>
               <p class="text-secondary text-sm font-light mb-4">Ambassadors and influencers needed</p>
             </div>
           </div>
           <div class="text-center">
-            <button class="btn-primary px-10 py-4 rounded-full font-bold text-lg" onclick="showPage('get-involved')" style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
+            <button class="btn-primary px-10 py-4 rounded-full font-bold text-lg" onclick="showPage('get-involved')"
+              style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
               View All Opportunities →
             </button>
           </div>
@@ -296,22 +382,30 @@
       <!-- Registration CTA Section -->
       <section class="relative py-24 px-6 bg-white/40">
         <div class="max-w-4xl mx-auto text-center">
-          <div class="card-japanese rounded-3xl p-12 relative overflow-hidden" style="background: rgba(255, 255, 255, 0.867);">
+          <div class="card-japanese rounded-3xl p-12 relative overflow-hidden"
+            style="background: rgba(255, 255, 255, 0.867);">
             <div class="absolute top-4 left-8 text-6xl opacity-30 float-gentle">🌸</div>
-            <div class="absolute bottom-4 right-8 text-6xl opacity-30 float-gentle" style="animation-delay: 0.5s;">🎎</div>
-            <p class="font-japanese text-lg text-secondary mb-2">登録</p>
-            <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Join the Celebration - FREE</h2>
-            <p class="text-xl text-secondary mb-8 max-w-xl mx-auto font-light">Register for this special day celebrating Japanese culture, tradition, and empowering women and girls in our community.</p>
-            <div class="bg-green-50 rounded-3xl p-8 mb-8 border-2 border-green-300">
-              <p class="font-display text-5xl font-bold text-green-600 mb-2" style="font-family: 'Playfair Display', serif;">FREE ENTRY</p>
-              <p class="text-lg text-secondary font-light">Open to all ages and backgrounds</p>
-              <p class="text-sm text-secondary mt-4 font-light">Registration helps us plan for catering and activities</p>
+            <div class="absolute bottom-4 right-8 text-6xl opacity-30 float-gentle" style="animation-delay: 0.5s;">🎎
             </div>
-            <button class="btn-primary px-12 py-4 rounded-full font-bold text-lg mb-4" onclick="document.getElementById('tickets-modal').classList.remove('hidden')" style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
+            <p class="font-japanese text-lg text-secondary mb-2">登録</p>
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-primary"
+              style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Join the Celebration - FREE</h2>
+            <p class="text-xl text-secondary mb-8 max-w-xl mx-auto font-light">Register for this special day celebrating
+              Japanese culture, tradition, and empowering women and girls in our community.</p>
+            <div class="bg-green-50 rounded-3xl p-8 mb-8 border-2 border-green-300">
+              <p class="font-display text-5xl font-bold text-green-600 mb-2"
+                style="font-family: 'Playfair Display', serif;">FREE ENTRY</p>
+              <p class="text-lg text-secondary font-light">Open to all ages and backgrounds</p>
+              <p class="text-sm text-secondary mt-4 font-light">Registration helps us plan for catering and activities
+              </p>
+            </div>
+            <a href="https://events.humanitix.com/hinamatsuri2026" target="_blank"
+              class="btn-primary px-12 py-4 rounded-full font-bold text-lg mb-4 inline-block"
+              style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
               📝 Register Now (Free)
-            </button>
-            <p class="text-sm text-secondary font-light mb-2">All workshops and performances included. Some activities may require advance registration.</p>
-            <p class="text-xs text-secondary font-light italic">Check your spam folder if you're looking for our email.</p>
+            </a>
+            <p class="text-xs text-secondary font-light italic">Check your Spam folder if you don't receive our email
+              reply in your inbox.</p>
           </div>
         </div>
       </section>
@@ -324,79 +418,104 @@
         <div class="max-w-5xl mx-auto">
           <div class="text-center mb-16">
             <div class="text-6xl mb-6">🤝</div>
-            <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Get Involved</h1>
+            <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 text-primary"
+              style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Get Involved</h1>
             <p class="font-japanese text-2xl text-secondary mb-4">一緒に作りましょう</p>
-            <p class="text-xl text-secondary max-w-2xl mx-auto font-light">Help us create a memorable experience! We're looking for passionate volunteers to bring this celebration to life.</p>
+            <p class="text-xl text-secondary max-w-2xl mx-auto font-light">Help us create a memorable experience! We're
+              looking for passionate volunteers to bring this celebration to life.</p>
           </div>
           <div class="grid md:grid-cols-2 gap-8 mb-16">
             <div class="card-japanese rounded-3xl p-8 card-hover" style="background: rgba(255, 255, 255, 0.867);">
               <div class="text-5xl mb-6">👩‍🎨</div>
-              <h3 class="font-display text-2xl font-bold mb-4 text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Workshop FACILITATORS, Music &amp; Art PERFORMERS, Guest Speakers</h3>
-              <p class="text-secondary mb-6 font-light">Lead workshops, perform music or art, or speak about Japanese culture. Share your talents and passion with festival attendees.</p>
+              <h3 class="font-display text-2xl font-bold mb-4 text-primary"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Workshop FACILITATORS, Music
+                &amp; Art PERFORMERS, Guest Speakers</h3>
+              <p class="text-secondary mb-6 font-light">Lead workshops, perform music or art, or speak about Japanese
+                culture. Share your talents and passion with festival attendees.</p>
               <ul class="space-y-2 text-secondary text-sm font-light mb-6">
                 <li>✓ 2-4 hour slots available</li>
                 <li>✓ Showcase your skills</li>
                 <li>✓ Support provided</li>
               </ul>
-              <button class="btn-primary px-6 py-3 rounded-full font-semibold w-full" onclick="openVolunteerForm('workshop')" style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
+              <button class="btn-primary px-6 py-3 rounded-full font-semibold w-full"
+                onclick="openVolunteerForm('workshop')"
+                style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
                 Apply Now
               </button>
             </div>
             <div class="card-japanese rounded-3xl p-8 card-hover" style="background: rgba(255, 255, 255, 0.867);">
               <div class="text-5xl mb-6">🍡</div>
-              <h3 class="font-display text-2xl font-bold mb-4 text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Food &amp; Catering Providers</h3>
-              <p class="text-secondary mb-6 font-light">Offer authentic Japanese cuisine or festival-appropriate food at our event. Join our community of food vendors and caterers.</p>
+              <h3 class="font-display text-2xl font-bold mb-4 text-primary"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Food &amp; Catering Providers
+              </h3>
+              <p class="text-secondary mb-6 font-light">Offer authentic Japanese cuisine or festival-appropriate food at
+                our event. Join our community of food vendors and caterers.</p>
               <ul class="space-y-2 text-secondary text-sm font-light mb-6">
                 <li>✓ Vendor space available</li>
                 <li>✓ High foot traffic</li>
                 <li>✓ Promotion support</li>
               </ul>
-              <button class="btn-primary px-6 py-3 rounded-full font-semibold w-full" onclick="openVolunteerForm('food')" style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
+              <button class="btn-primary px-6 py-3 rounded-full font-semibold w-full"
+                onclick="openVolunteerForm('food')"
+                style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
                 Apply as Vendor
               </button>
             </div>
             <div class="card-japanese rounded-3xl p-8 card-hover" style="background: rgba(255, 255, 255, 0.867);">
               <div class="text-5xl mb-6">🤳</div>
-              <h3 class="font-display text-2xl font-bold mb-4 text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Social Media Influencers</h3>
-              <p class="text-secondary mb-6 font-light">Share the festival's beauty with your audience. Create content, stories, and posts that celebrate Japanese culture and community.</p>
+              <h3 class="font-display text-2xl font-bold mb-4 text-primary"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Social Media Influencers</h3>
+              <p class="text-secondary mb-6 font-light">Share the festival's beauty with your audience. Create content,
+                stories, and posts that celebrate Japanese culture and community.</p>
               <ul class="space-y-2 text-secondary text-sm font-light mb-6">
                 <li>✓ Content collaboration opportunities</li>
                 <li>✓ VIP access to events</li>
                 <li>✓ Cross-promotion support</li>
               </ul>
-              <button class="btn-primary px-6 py-3 rounded-full font-semibold w-full" onclick="openVolunteerForm('influencer')" style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
+              <button class="btn-primary px-6 py-3 rounded-full font-semibold w-full"
+                onclick="openVolunteerForm('influencer')"
+                style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
                 Partner With Us
               </button>
             </div>
             <div class="card-japanese rounded-3xl p-8 card-hover" style="background: rgba(255, 255, 255, 0.867);">
               <div class="text-5xl mb-6">🛍️</div>
-              <h3 class="font-display text-2xl font-bold mb-4 text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Market STALL HOLDERS</h3>
-              <p class="text-secondary mb-6 font-light">Showcase and sell Japanese-inspired crafts, products, or artwork. Be part of our vibrant festival marketplace.</p>
+              <h3 class="font-display text-2xl font-bold mb-4 text-primary"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Market STALL HOLDERS</h3>
+              <p class="text-secondary mb-6 font-light">Showcase and sell Japanese-inspired crafts, products, or
+                artwork. Be part of our vibrant festival marketplace.</p>
               <ul class="space-y-2 text-secondary text-sm font-light mb-6">
                 <li>✓ Prime festival location</li>
                 <li>✓ Tables &amp; setup provided</li>
                 <li>✓ Large audience reach</li>
               </ul>
-              <button class="btn-primary px-6 py-3 rounded-full font-semibold w-full" onclick="openVolunteerForm('stall')" style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
+              <button class="btn-primary px-6 py-3 rounded-full font-semibold w-full"
+                onclick="openVolunteerForm('stall')"
+                style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
                 Book Your Stall
               </button>
             </div>
             <div class="card-japanese rounded-3xl p-8 card-hover" style="background: rgba(255, 255, 255, 0.867);">
               <div class="text-5xl mb-6">🌸</div>
-              <h3 class="font-display text-2xl font-bold mb-4 text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Welcome Ambassadors</h3>
-              <p class="text-secondary mb-6 font-light">Greet guests, provide information, and ensure everyone feels welcome. Be the friendly face of our festival.</p>
+              <h3 class="font-display text-2xl font-bold mb-4 text-primary"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Welcome Ambassadors</h3>
+              <p class="text-secondary mb-6 font-light">Greet guests, provide information, and ensure everyone feels
+                welcome. Be the friendly face of our festival.</p>
               <ul class="space-y-2 text-secondary text-sm font-light mb-6">
                 <li>✓ All-day or half-day shifts</li>
                 <li>✓ Meet new people</li>
                 <li>✓ Festival t-shirt included</li>
               </ul>
-              <button class="btn-primary px-6 py-3 rounded-full font-semibold w-full" onclick="openVolunteerForm('ambassador')" style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
+              <button class="btn-primary px-6 py-3 rounded-full font-semibold w-full"
+                onclick="openVolunteerForm('ambassador')"
+                style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
                 Become an Ambassador
               </button>
             </div>
           </div>
           <div class="card-japanese rounded-3xl p-10 text-center" style="background: rgba(255, 255, 255, 0.867);">
-            <h3 class="font-display text-3xl font-bold mb-4 text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Why Volunteer?</h3>
+            <h3 class="font-display text-3xl font-bold mb-4 text-primary"
+              style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Why Volunteer?</h3>
             <div class="grid md:grid-cols-3 gap-8 mt-8">
               <div>
                 <div class="text-4xl mb-3">💖</div>
@@ -426,90 +545,132 @@
         <div class="max-w-5xl mx-auto">
           <div class="text-center mb-16">
             <div class="text-6xl mb-6">💪</div>
-            <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Support the Cause</h1>
+            <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 text-primary"
+              style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Support the Cause</h1>
             <p class="font-japanese text-2xl text-secondary mb-4">未来を作る</p>
-            <p class="text-xl text-secondary max-w-2xl mx-auto font-light">Beyond celebrating tradition, we're building a future of equality, diversity, and empowerment.</p>
+            <p class="text-xl text-secondary max-w-2xl mx-auto font-light">Beyond celebrating tradition, we're building
+              a future of equality, diversity, and empowerment.</p>
           </div>
           <!-- Mission Statement -->
           <div class="card-japanese rounded-3xl p-10 mb-16" style="background: rgba(255, 255, 255, 0.867);">
-            <h2 class="font-display text-3xl font-bold mb-6 text-primary text-center" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Our Mission</h2>
-            <p class="text-lg text-secondary leading-relaxed font-light mb-6">Japanese Girls' Day Reimagined is more than a cultural festival. We are committed to <strong class="text-primary" style="color: rgb(93, 31, 40);">women and girls empowerment</strong>, creating spaces where everyone can thrive regardless of gender, background, or circumstances. We celebrate diversity, champion equality, and build vibrant, inclusive communities.</p>
-            <p class="text-lg text-secondary leading-relaxed font-light mb-8">Through cultural education, community engagement, and advocacy, we work to dismantle barriers and create opportunities for all women and girls to reach their full potential.</p>
+            <h2 class="font-display text-3xl font-bold mb-6 text-primary text-center"
+              style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Our Mission</h2>
+            <p class="text-lg text-secondary leading-relaxed font-light mb-6">Japanese Girls' Day Reimagined is more
+              than a cultural festival. We are committed to <strong class="text-primary"
+                style="color: rgb(93, 31, 40);">women and girls empowerment</strong>, creating spaces where everyone can
+              thrive regardless of gender, background, or circumstances. We celebrate diversity, champion equality, and
+              build vibrant, inclusive communities.</p>
+            <p class="text-lg text-secondary leading-relaxed font-light mb-8">Through cultural education, community
+              engagement, and advocacy, we work to dismantle barriers and create opportunities for all women and girls
+              to reach their full potential.</p>
             <div class="text-center">
-              <a href="coming-soon.html" target="_blank" rel="noopener noreferrer" class="btn-primary inline-block px-10 py-4 rounded-full font-bold text-lg" style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
+              <a href="coming-soon.html" target="_blank" rel="noopener noreferrer"
+                class="btn-primary inline-block px-10 py-4 rounded-full font-bold text-lg"
+                style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
                 Learn More
               </a>
             </div>
           </div>
           <!-- About Us -->
           <div class="card-japanese rounded-3xl p-10 mb-12" style="background: rgba(255, 255, 255, 0.867);">
-            <h2 class="font-display text-3xl font-bold mb-8 text-primary text-center" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">About Us</h2>
+            <h2 class="font-display text-3xl font-bold mb-8 text-primary text-center"
+              style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">About Us</h2>
             <div class="space-y-6 text-secondary leading-relaxed">
-              <p class="text-lg font-light"><strong class="text-primary" style="color: rgb(93, 31, 40);">Flowwa</strong> is a grassroots initiative championing women and girls' empowerment, diversity, equality, and community building. We believe in creating inclusive spaces where everyone can flourish, regardless of gender, background, or circumstances.</p>
-              <p class="font-light">Our work centers on breaking down barriers and opening doors of opportunity. Through cultural celebrations, educational programs, mentorship initiatives, and community engagement, we foster environments where women and girls can develop their full potential.</p>
-              <p class="font-light">We celebrate the rich diversity of our communities, honoring different cultures, traditions, and perspectives while working toward a more equitable future. The Japanese Girls' Festival - Reimagined exemplifies our mission: taking a beautiful cultural tradition and using it as a platform to promote empowerment, education, and unity.</p>
-              <p class="font-light">At Flowwa, we're not just organizing events - we're building movements. We're creating networks of support, spaces for growth, and opportunities for leadership. We're committed to ensuring that every woman and girl has the resources, encouragement, and community backing to pursue their dreams and make their voices heard.</p>
+              <p class="text-lg font-light"><strong class="text-primary" style="color: rgb(93, 31, 40);">Flowwa</strong>
+                is a grassroots initiative championing women and girls' empowerment, diversity, equality, and community
+                building. We believe in creating inclusive spaces where everyone can flourish, regardless of gender,
+                background, or circumstances.</p>
+              <p class="font-light">Our work centers on breaking down barriers and opening doors of opportunity. Through
+                cultural celebrations, educational programs, mentorship initiatives, and community engagement, we foster
+                environments where women and girls can develop their full potential.</p>
+              <p class="font-light">We celebrate the rich diversity of our communities, honoring different cultures,
+                traditions, and perspectives while working toward a more equitable future. The Japanese Girls' Festival
+                - Reimagined exemplifies our mission: taking a beautiful cultural tradition and using it as a platform
+                to promote empowerment, education, and unity.</p>
+              <p class="font-light">At Flowwa, we're not just organizing events - we're building movements. We're
+                creating networks of support, spaces for growth, and opportunities for leadership. We're committed to
+                ensuring that every woman and girl has the resources, encouragement, and community backing to pursue
+                their dreams and make their voices heard.</p>
               <div class="mt-8 p-6 bg-pink-50 rounded-2xl">
-                <p class="text-center font-semibold text-primary" style="color: rgb(93, 31, 40);">Join us in reimagining a world where equality, diversity, and empowerment are not just ideals, but lived realities for all.</p>
+                <p class="text-center font-semibold text-primary" style="color: rgb(93, 31, 40);">Join us in reimagining
+                  a world where equality, diversity, and empowerment are not just ideals, but lived realities for all.
+                </p>
               </div>
             </div>
           </div>
           <!-- How to Support -->
           <div class="card-japanese rounded-3xl p-10" style="background: rgba(255, 255, 255, 0.867);">
-            <h2 class="font-display text-3xl font-bold mb-8 text-primary text-center" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">How You Can Help</h2>
+            <h2 class="font-display text-3xl font-bold mb-8 text-primary text-center"
+              style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">How You Can Help</h2>
             <div class="space-y-6">
               <div class="flex items-start gap-4 p-6 bg-pink-50 rounded-2xl">
                 <div class="text-3xl">📢</div>
                 <div class="flex-1">
                   <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">Spread the Word</h4>
-                  <p class="text-secondary text-sm font-light">Share our mission with friends, family, and on social media. The more people who know, the bigger our impact.</p>
+                  <p class="text-secondary text-sm font-light">Share our mission with friends, family, and on social
+                    media. The more people who know, the bigger our impact.</p>
                 </div>
               </div>
               <div class="flex items-start gap-4 p-6 bg-pink-50 rounded-2xl">
                 <div class="text-3xl">🤲</div>
                 <div class="flex-1">
-                  <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">Donate Your Time, Skills and Expertise</h4>
-                  <p class="text-secondary text-sm font-light">Volunteer at our events or join one of our ongoing community programs. Every hour makes a difference.</p>
+                  <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">Donate Your Time,
+                    Skills and Expertise</h4>
+                  <p class="text-secondary text-sm font-light">Volunteer at our events or join one of our ongoing
+                    community programs. Every hour makes a difference.</p>
                 </div>
               </div>
               <div class="flex items-start gap-4 p-6 bg-pink-50 rounded-2xl">
                 <div class="text-3xl">🤜🤛</div>
                 <div class="flex-1">
                   <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">Partner With Us</h4>
-                  <p class="text-secondary text-sm font-light">Organizations and businesses can collaborate on programs, sponsor events, or provide resources and mentorship.</p>
+                  <p class="text-secondary text-sm font-light">Organizations and businesses can collaborate on programs,
+                    sponsor events, or provide resources and mentorship.</p>
                 </div>
               </div>
               <div class="flex items-start gap-4 p-6 bg-pink-50 rounded-2xl">
                 <div class="text-3xl">👩‍👩‍👧‍👧</div>
                 <div class="flex-1">
-                  <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">Attend &amp; Participate</h4>
-                  <p class="text-secondary text-sm font-light">Join our events, bring your family, engage with our workshops. Your presence strengthens our community.</p>
+                  <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">Attend &amp;
+                    Participate</h4>
+                  <p class="text-secondary text-sm font-light">Join our events, bring your family, engage with our
+                    workshops. Your presence strengthens our community.</p>
                 </div>
               </div>
               <div class="flex items-start gap-4 p-6 bg-pink-50 rounded-2xl">
                 <div class="text-3xl">🧑🏻‍🏫</div>
                 <div class="flex-1">
-                  <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">Become a Workshop Facilitator</h4>
-                  <p class="text-secondary text-sm font-light">Share your expertise by leading workshops and educational sessions. Help others learn and grow through your knowledge and passion.</p>
+                  <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">Become a Workshop
+                    Facilitator</h4>
+                  <p class="text-secondary text-sm font-light">Share your expertise by leading workshops and educational
+                    sessions. Help others learn and grow through your knowledge and passion.</p>
                 </div>
               </div>
               <div class="flex items-start gap-4 p-6 bg-pink-50 rounded-2xl">
                 <div class="text-3xl">🎨</div>
                 <div class="flex-1">
-                  <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">Create Art With Us - Join Our Art Projects</h4>
-                  <p class="text-secondary text-sm font-light">Collaborate on community art installations and creative projects. Express yourself and contribute to beautiful collective works that celebrate our community.</p>
+                  <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">Create Art With Us -
+                    Join Our Art Projects</h4>
+                  <p class="text-secondary text-sm font-light">Collaborate on community art installations and creative
+                    projects. Express yourself and contribute to beautiful collective works that celebrate our
+                    community.</p>
                 </div>
               </div>
               <div class="flex items-start gap-4 p-6 bg-pink-50 rounded-2xl">
                 <div class="text-3xl">🌐</div>
                 <div class="flex-1">
-                  <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">Introduce Us to Your Community</h4>
-                  <p class="text-secondary text-sm font-light">If you like what we do, suggest your workplace, clubs, or circle of friends to inquire about customised Japanese art and culture workshops for your group. Help us reach more communities!</p>
+                  <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">Introduce Us to Your
+                    Community</h4>
+                  <p class="text-secondary text-sm font-light">If you like what we do, suggest your workplace, clubs, or
+                    circle of friends to inquire about customised Japanese art and culture workshops for your group.
+                    Help us reach more communities!</p>
                 </div>
               </div>
             </div>
             <div class="mt-10 text-center">
-              <button class="btn-primary px-10 py-4 rounded-full font-bold text-lg" onclick="document.getElementById('tickets-modal').classList.remove('hidden')" style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
+              <button class="btn-primary px-10 py-4 rounded-full font-bold text-lg"
+                onclick="document.getElementById('tickets-modal').classList.remove('hidden')"
+                style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
                 Join Our Community
               </button>
             </div>
@@ -526,8 +687,10 @@
           <div>
             <div class="flex items-center gap-2 mb-4">
               <div class="text-2xl">🌸</div>
-              <div class="font-display text-2xl font-bold text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">
-                Japanese Girls' Festival <span class="gradient-text" style="text-shadow: 2px 2px 8px rgba(255, 159, 176, 0.4);">Reimagined</span>
+              <div class="font-display text-2xl font-bold text-primary"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">
+                Japanese Girls' Festival <span class="gradient-text"
+                  style="text-shadow: 2px 2px 8px rgba(255, 159, 176, 0.4);">Reimagined</span>
               </div>
             </div>
             <p class="text-secondary font-light">Empowering women and girls through cultural celebration.</p>
@@ -538,41 +701,56 @@
               <li><a href="#schedule" class="hover:text-primary transition-colors">Program</a></li>
               <li><a href="#food" class="hover:text-primary transition-colors">Food</a></li>
               <li><a href="#location" class="hover:text-primary transition-colors">Location</a></li>
-              <li><a href="#get-involved" class="hover:text-primary transition-colors" onclick="showPage('get-involved')">Get Involved</a></li>
-              <li><a href="#support" class="hover:text-primary transition-colors" onclick="showPage('support')">Support</a></li>
+              <li><a href="#get-involved" class="hover:text-primary transition-colors"
+                  onclick="showPage('get-involved')">Get Involved</a></li>
+              <li><a href="#support" class="hover:text-primary transition-colors"
+                  onclick="showPage('support')">Support</a></li>
             </ul>
           </div>
           <div>
             <h4 class="font-bold mb-4 text-primary" style="color: rgb(93, 31, 40);">Connect</h4>
             <div class="flex gap-4 mb-4">
-              <a href="https://www.instagram.com/flowwa__japanese_art_therapy/" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform" aria-label="Instagram">
+              <a href="https://www.instagram.com/flowwa__japanese_art_therapy/" target="_blank"
+                rel="noopener noreferrer" class="hover:scale-110 transition-transform" aria-label="Instagram">
                 <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                  </path>
                 </svg>
               </a>
-              <a href="https://www.facebook.com/flowwa.org" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform" aria-label="Facebook">
+              <a href="https://www.facebook.com/flowwa.org" target="_blank" rel="noopener noreferrer"
+                class="hover:scale-110 transition-transform" aria-label="Facebook">
                 <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                  </path>
                 </svg>
               </a>
-              <a href="https://www.youtube.com/@flowwa-org" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform" aria-label="YouTube">
+              <a href="https://www.youtube.com/@flowwa-org" target="_blank" rel="noopener noreferrer"
+                class="hover:scale-110 transition-transform" aria-label="YouTube">
                 <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z">
+                  </path>
                 </svg>
               </a>
-              <a href="https://www.linkedin.com/company/flowwa" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/flowwa" target="_blank" rel="noopener noreferrer"
+                class="hover:scale-110 transition-transform" aria-label="LinkedIn">
                 <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+                  </path>
                 </svg>
               </a>
-              <a href="https://www.flowwa.org/booking" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform" aria-label="Event Calendar">
+              <a href="https://www.flowwa.org/booking" target="_blank" rel="noopener noreferrer"
+                class="hover:scale-110 transition-transform" aria-label="Event Calendar">
                 <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5zm2 4h10v2H7v-2zm0 4h7v2H7v-2z"></path>
+                  <path
+                    d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5zm2 4h10v2H7v-2zm0 4h7v2H7v-2z">
+                  </path>
                 </svg>
               </a>
             </div>
-            <p class="text-secondary text-sm font-light mb-2">info@hinamatsuri.com.au</p>
-            <p class="text-secondary text-xs font-light italic">Check your spam folder if you're looking for our email.</p>
           </div>
         </div>
         <div class="border-t border-pink-200 pt-8 text-center text-secondary text-sm font-light">
@@ -583,30 +761,40 @@
 
     <!-- Tickets Modal -->
     <div id="tickets-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
-      <div class="absolute inset-0 bg-pink-900/60 backdrop-blur-sm" onclick="document.getElementById('tickets-modal').classList.add('hidden')"></div>
-      <div class="relative bg-gradient-to-br from-pink-50 to-white rounded-3xl p-8 max-w-md w-full max-h-[90%] overflow-auto shadow-2xl border-2 border-pink-200">
-        <button class="absolute top-4 right-4 text-secondary hover:text-primary" onclick="document.getElementById('tickets-modal').classList.add('hidden')">
+      <div class="absolute inset-0 bg-pink-900/60 backdrop-blur-sm"
+        onclick="document.getElementById('tickets-modal').classList.add('hidden')"></div>
+      <div
+        class="relative bg-gradient-to-br from-pink-50 to-white rounded-3xl p-8 max-w-md w-full max-h-[90%] overflow-auto shadow-2xl border-2 border-pink-200">
+        <button class="absolute top-4 right-4 text-secondary hover:text-primary"
+          onclick="document.getElementById('tickets-modal').classList.add('hidden')">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
         <div class="text-center mb-6">
           <div class="text-4xl mb-3">🌸</div>
-          <h3 class="font-display text-2xl font-bold text-primary" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Free Registration</h3>
+          <h3 class="font-display text-2xl font-bold text-primary"
+            style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Free Registration</h3>
           <p class="font-japanese text-sm text-secondary mt-1">登録</p>
         </div>
         <form id="ticket-form" class="space-y-4">
           <div>
             <label for="ticket-name" class="block text-sm text-secondary mb-2 font-semibold">Full Name</label>
-            <input type="text" id="ticket-name" class="w-full px-4 py-3 bg-white rounded-xl border-2 border-pink-200 text-primary placeholder-pink-300 focus:outline-none focus:border-primary" placeholder="Your name" required style="color: rgb(93, 31, 40);">
+            <input type="text" id="ticket-name"
+              class="w-full px-4 py-3 bg-white rounded-xl border-2 border-pink-200 text-primary placeholder-pink-300 focus:outline-none focus:border-primary"
+              placeholder="Your name" required style="color: rgb(93, 31, 40);">
           </div>
           <div>
             <label for="ticket-email" class="block text-sm text-secondary mb-2 font-semibold">Email</label>
-            <input type="email" id="ticket-email" class="w-full px-4 py-3 bg-white rounded-xl border-2 border-pink-200 text-primary placeholder-pink-300 focus:outline-none focus:border-primary" placeholder="your@email.com" required style="color: rgb(93, 31, 40);">
+            <input type="email" id="ticket-email"
+              class="w-full px-4 py-3 bg-white rounded-xl border-2 border-pink-200 text-primary placeholder-pink-300 focus:outline-none focus:border-primary"
+              placeholder="your@email.com" required style="color: rgb(93, 31, 40);">
           </div>
           <div>
             <label for="ticket-qty" class="block text-sm text-secondary mb-2 font-semibold">Number of Attendees</label>
-            <select id="ticket-qty" class="w-full px-4 py-3 bg-white rounded-xl border-2 border-pink-200 text-primary focus:outline-none focus:border-primary" style="color: rgb(93, 31, 40);">
+            <select id="ticket-qty"
+              class="w-full px-4 py-3 bg-white rounded-xl border-2 border-pink-200 text-primary focus:outline-none focus:border-primary"
+              style="color: rgb(93, 31, 40);">
               <option value="1">1 person</option>
               <option value="2">2 people</option>
               <option value="3">3 people</option>
@@ -616,30 +804,39 @@
           </div>
           <div>
             <label for="postcode" class="block text-sm text-secondary mb-2 font-semibold">Postcode</label>
-            <input type="text" id="postcode" class="w-full px-4 py-3 bg-white rounded-xl border-2 border-pink-200 text-primary placeholder-pink-300 focus:outline-none focus:border-primary" placeholder="e.g., 3218" required style="color: rgb(93, 31, 40);">
+            <input type="text" id="postcode"
+              class="w-full px-4 py-3 bg-white rounded-xl border-2 border-pink-200 text-primary placeholder-pink-300 focus:outline-none focus:border-primary"
+              placeholder="e.g., 3218" required style="color: rgb(93, 31, 40);">
           </div>
           <div id="form-error" class="hidden p-4 bg-red-50 border-2 border-red-200 rounded-xl">
             <p class="text-red-600 text-sm font-semibold">Unable to submit registration. Please try again.</p>
           </div>
           <div class="pt-4">
-            <button type="submit" id="submit-btn" class="btn-primary w-full py-4 rounded-xl font-bold text-lg" style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
+            <button type="submit" id="submit-btn" class="btn-primary w-full py-4 rounded-xl font-bold text-lg"
+              style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
               Complete Registration (Free) →
             </button>
           </div>
-          <p class="text-xs text-secondary text-center font-light">Registration is completely free. We just need these details for planning purposes.</p>
+          <p class="text-xs text-secondary text-center font-light">Registration is completely free. We just need these
+            details for planning purposes.</p>
         </form>
         <div id="ticket-success" class="hidden text-center py-8">
           <div class="text-6xl mb-4">✅</div>
-          <h4 class="font-display text-2xl font-bold text-primary mb-2" style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Registration Complete!</h4>
+          <h4 class="font-display text-2xl font-bold text-primary mb-2"
+            style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Registration Complete!</h4>
           <p class="font-japanese text-lg text-secondary mb-4">ありがとうございます</p>
-          <p class="text-secondary mb-6 font-light">Welcome! You're all set for Japanese Girls' Day Reimagined. See you there!</p>
+          <p class="text-secondary mb-6 font-light">Welcome! You're all set for Japanese Girls' Day Reimagined. See you
+            there!</p>
           <div class="mb-6">
-            <button onclick="downloadTicket()" class="btn-primary px-8 py-3 rounded-full font-bold mb-3 inline-block" style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
+            <button onclick="downloadTicket()" class="btn-primary px-8 py-3 rounded-full font-bold mb-3 inline-block"
+              style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
               📥 Download Your Ticket
             </button>
             <p class="text-xs text-secondary font-light">Save this as proof of registration</p>
           </div>
-          <button onclick="closeSuccessModal()" class="px-6 py-3 bg-pink-100 rounded-full text-primary font-semibold hover:bg-pink-200 transition-colors" style="color: rgb(93, 31, 40);">
+          <button onclick="closeSuccessModal()"
+            class="px-6 py-3 bg-pink-100 rounded-full text-primary font-semibold hover:bg-pink-200 transition-colors"
+            style="color: rgb(93, 31, 40);">
             Close
           </button>
         </div>
@@ -649,4 +846,5 @@
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
