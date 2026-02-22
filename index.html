@@ -39,13 +39,12 @@
             onclick="showPage('home')">Home</a>
           <a href="#schedule" class="text-secondary hover:text-primary transition-colors font-light"
             onclick="showPage('home')">Program</a>
-          <a href="#get-involved" class="text-secondary hover:text-primary transition-colors font-light"
-            onclick="showPage('get-involved')">Get Involved</a>
+          <a href="#get-involved" class="text-secondary hover:text-primary transition-colors font-light">Get
+            Involved</a>
           <!-- TODO: unhide later with proper copy -->
           <a hidden href="#support" class="text-secondary hover:text-primary transition-colors font-light"
             onclick="showPage('support')">Support</a>
-          <a href="https://events.humanitix.com/hinamatsuri2026" target="_blank"
-            class="btn-primary px-6 py-2 rounded-full font-semibold"
+          <a href="#registration" class="btn-primary px-6 py-2 rounded-full font-semibold"
             style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
             Registration
           </a>
@@ -64,13 +63,11 @@
             onclick="showPage('home')">Home</a>
           <a href="#schedule" class="text-secondary hover:text-primary transition-colors"
             onclick="showPage('home')">Program</a>
-          <a href="#get-involved" class="text-secondary hover:text-primary transition-colors"
-            onclick="showPage('get-involved')">Get Involved</a>
+          <a href="#get-involved" class="text-secondary hover:text-primary transition-colors">Get Involved</a>
           <!-- TODO: unhide later with proper copy -->
           <a hidden href="#support" class="text-secondary hover:text-primary transition-colors"
             onclick="showPage('support')">Support</a>
-          <a href="https://events.humanitix.com/hinamatsuri2026" target="_blank"
-            class="btn-primary px-6 py-2 rounded-full font-semibold w-full text-center"
+          <a href="#registration" class="btn-primary px-6 py-2 rounded-full font-semibold w-full text-center"
             style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
             Registration
           </a>
@@ -341,50 +338,95 @@
         </div>
       </section>
 
-      <!-- Get Involved Preview Section -->
-      <section class="relative py-24 px-6">
-        <div class="max-w-6xl mx-auto">
+      <!-- Get Involved Section -->
+      <section id="get-involved" class="relative py-24 px-6">
+        <div class="max-w-5xl mx-auto">
           <div class="text-center mb-16">
-            <p class="font-japanese text-lg text-secondary mb-2">参加する</p>
+            <p class="font-japanese text-lg text-secondary mb-2">一緒に作りましょう</p>
             <h2 class="font-display text-4xl md:text-6xl font-bold mb-6 text-primary"
               style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Get Involved</h2>
-            <p class="text-xl text-secondary font-light max-w-2xl mx-auto">Join us in creating a memorable celebration!
-              We welcome volunteers, vendors, performers, and partners.</p>
-          </div>
-          <div class="grid md:grid-cols-3 gap-6 mb-12">
-            <div class="card-japanese rounded-3xl p-6 text-center card-hover"
-              style="background: rgba(255, 255, 255, 0.867);">
-              <div class="text-5xl mb-4">👩‍🎨</div>
-              <h3 class="font-display text-xl font-bold mb-3 text-primary"
-                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Share Your Talents</h3>
-              <p class="text-secondary text-sm font-light mb-4">Facilitators, performers, and speakers wanted</p>
-            </div>
-            <div class="card-japanese rounded-3xl p-6 text-center card-hover"
-              style="background: rgba(255, 255, 255, 0.867);">
-              <div class="text-5xl mb-4">🛍️</div>
-              <h3 class="font-display text-xl font-bold mb-3 text-primary"
-                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Vendors &amp; Stall Holders</h3>
-              <p class="text-secondary text-sm font-light mb-4">Food providers and market stallholders welcome</p>
-            </div>
-            <div class="card-japanese rounded-3xl p-6 text-center card-hover"
-              style="background: rgba(255, 255, 255, 0.867);">
-              <div class="text-5xl mb-4">🤝</div>
-              <h3 class="font-display text-xl font-bold mb-3 text-primary"
-                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Volunteer With Us</h3>
-              <p class="text-secondary text-sm font-light mb-4">Ambassadors and influencers needed</p>
+            <p class="text-xl text-secondary max-w-2xl mx-auto font-light mb-8">Help us create a memorable experience!
+              We're
+              looking for passionate volunteers to bring this celebration to life.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="https://events.humanitix.com/hinamatsuri-volunteer" target="_blank"
+                class="btn-primary px-12 py-4 rounded-full font-bold text-lg inline-block"
+                style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
+                Volunteer Sign-Up
+              </a>
+              <a href="https://events.humanitix.com/hinamatsuri-stall-holder" target="_blank"
+                class="btn-primary px-12 py-4 rounded-full font-bold text-lg inline-block"
+                style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
+                Market Stall Holders
+              </a>
             </div>
           </div>
-          <div class="text-center">
-            <button class="btn-primary px-10 py-4 rounded-full font-bold text-lg" onclick="showPage('get-involved')"
-              style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
-              View All Opportunities →
-            </button>
+          <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <div class="card-japanese rounded-3xl p-8 card-hover" style="background: rgba(255, 255, 255, 0.867);">
+              <div class="text-5xl mb-6">👩‍🎨</div>
+              <h3 class="font-display text-2xl font-bold mb-4 text-primary"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Workshop FACILITATORS, Music
+                &amp; Art PERFORMERS, Guest Speakers</h3>
+              <p class="text-secondary mb-6 font-light">Lead workshops, perform music or art, or speak about Japanese
+                culture, your own culture, equality and equity, diversity and inclusion, mindfulness and empowerment.
+                Share your talents and passion with festival attendees.</p>
+            </div>
+            <div class="card-japanese rounded-3xl p-8 card-hover" style="background: rgba(255, 255, 255, 0.867);">
+              <div class="text-5xl mb-6">🍡</div>
+              <h3 class="font-display text-2xl font-bold mb-4 text-primary"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Food &amp; Catering Providers
+              </h3>
+              <p class="text-secondary mb-6 font-light">Offer festival food (Japanese, multicultural or traditional, all
+                welcome).</p>
+            </div>
+            <div class="card-japanese rounded-3xl p-8 card-hover" style="background: rgba(255, 255, 255, 0.867);">
+              <div class="text-5xl mb-6">🤳</div>
+              <h3 class="font-display text-2xl font-bold mb-4 text-primary"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Social Media Influencers</h3>
+              <p class="text-secondary mb-6 font-light">Share the festival's beauty with your audience. Create content,
+                stories, and posts that celebrate Japanese culture and community.</p>
+            </div>
+            <div class="card-japanese rounded-3xl p-8 card-hover" style="background: rgba(255, 255, 255, 0.867);">
+              <div class="text-5xl mb-6">🛍️</div>
+              <h3 class="font-display text-2xl font-bold mb-4 text-primary"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Market STALL HOLDERS</h3>
+              <p class="text-secondary mb-6 font-light">Showcase and sell crafts, products, or
+                artwork. Be part of our vibrant festival marketplace.</p>
+            </div>
+            <div class="card-japanese rounded-3xl p-8 card-hover" style="background: rgba(255, 255, 255, 0.867);">
+              <div class="text-5xl mb-6">🌸</div>
+              <h3 class="font-display text-2xl font-bold mb-4 text-primary"
+                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Welcome Ambassadors</h3>
+              <p class="text-secondary mb-6 font-light">Greet guests, provide information, and ensure everyone feels
+                welcome. Be the friendly face of our festival.</p>
+            </div>
+          </div>
+          <div class="card-japanese rounded-3xl p-10 text-center" style="background: rgba(255, 255, 255, 0.867);">
+            <h3 class="font-display text-3xl font-bold mb-4 text-primary"
+              style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Why Volunteer?</h3>
+            <div class="grid md:grid-cols-3 gap-8 mt-8">
+              <div>
+                <div class="text-4xl mb-3">💖</div>
+                <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">Make a Difference</h4>
+                <p class="text-secondary text-sm font-light">Support women and girls empowerment initiatives</p>
+              </div>
+              <div>
+                <div class="text-4xl mb-3">🌏</div>
+                <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">Cultural Exchange</h4>
+                <p class="text-secondary text-sm font-light">Learn about Japanese traditions firsthand</p>
+              </div>
+              <div>
+                <div class="text-4xl mb-3">👥</div>
+                <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">Build Community</h4>
+                <p class="text-secondary text-sm font-light">Connect with like-minded individuals</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Registration CTA Section -->
-      <section class="relative py-24 px-6 bg-white/40">
+      <section id="registration" class="relative py-24 px-6 bg-white/40">
         <div class="max-w-4xl mx-auto text-center">
           <div class="card-japanese rounded-3xl p-12 relative overflow-hidden"
             style="background: rgba(255, 255, 255, 0.867);">
@@ -419,132 +461,6 @@
     </div>
     <!-- End Home Page -->
 
-    <!-- Get Involved Page -->
-    <div id="page-get-involved" class="page-content hidden">
-      <section class="relative min-h-screen px-6 pt-32 pb-24">
-        <div class="max-w-5xl mx-auto">
-          <div class="text-center mb-16">
-            <div class="text-6xl mb-6">🤝</div>
-            <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 text-primary"
-              style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Get Involved</h1>
-            <p class="font-japanese text-2xl text-secondary mb-4">一緒に作りましょう</p>
-            <p class="text-xl text-secondary max-w-2xl mx-auto font-light">Help us create a memorable experience! We're
-              looking for passionate volunteers to bring this celebration to life.</p>
-          </div>
-          <div class="grid md:grid-cols-2 gap-8 mb-16">
-            <div class="card-japanese rounded-3xl p-8 card-hover" style="background: rgba(255, 255, 255, 0.867);">
-              <div class="text-5xl mb-6">👩‍🎨</div>
-              <h3 class="font-display text-2xl font-bold mb-4 text-primary"
-                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Workshop FACILITATORS, Music
-                &amp; Art PERFORMERS, Guest Speakers</h3>
-              <p class="text-secondary mb-6 font-light">Lead workshops, perform music or art, or speak about Japanese
-                culture. Share your talents and passion with festival attendees.</p>
-              <ul class="space-y-2 text-secondary text-sm font-light mb-6">
-                <li>✓ 2-4 hour slots available</li>
-                <li>✓ Showcase your skills</li>
-                <li>✓ Support provided</li>
-              </ul>
-              <button class="btn-primary px-6 py-3 rounded-full font-semibold w-full"
-                onclick="openVolunteerForm('workshop')"
-                style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
-                Apply Now
-              </button>
-            </div>
-            <div class="card-japanese rounded-3xl p-8 card-hover" style="background: rgba(255, 255, 255, 0.867);">
-              <div class="text-5xl mb-6">🍡</div>
-              <h3 class="font-display text-2xl font-bold mb-4 text-primary"
-                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Food &amp; Catering Providers
-              </h3>
-              <p class="text-secondary mb-6 font-light">Offer authentic Japanese cuisine or festival-appropriate food at
-                our event. Join our community of food vendors and caterers.</p>
-              <ul class="space-y-2 text-secondary text-sm font-light mb-6">
-                <li>✓ Vendor space available</li>
-                <li>✓ High foot traffic</li>
-                <li>✓ Promotion support</li>
-              </ul>
-              <button class="btn-primary px-6 py-3 rounded-full font-semibold w-full"
-                onclick="openVolunteerForm('food')"
-                style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
-                Apply as Vendor
-              </button>
-            </div>
-            <div class="card-japanese rounded-3xl p-8 card-hover" style="background: rgba(255, 255, 255, 0.867);">
-              <div class="text-5xl mb-6">🤳</div>
-              <h3 class="font-display text-2xl font-bold mb-4 text-primary"
-                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Social Media Influencers</h3>
-              <p class="text-secondary mb-6 font-light">Share the festival's beauty with your audience. Create content,
-                stories, and posts that celebrate Japanese culture and community.</p>
-              <ul class="space-y-2 text-secondary text-sm font-light mb-6">
-                <li>✓ Content collaboration opportunities</li>
-                <li>✓ VIP access to events</li>
-                <li>✓ Cross-promotion support</li>
-              </ul>
-              <button class="btn-primary px-6 py-3 rounded-full font-semibold w-full"
-                onclick="openVolunteerForm('influencer')"
-                style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
-                Partner With Us
-              </button>
-            </div>
-            <div class="card-japanese rounded-3xl p-8 card-hover" style="background: rgba(255, 255, 255, 0.867);">
-              <div class="text-5xl mb-6">🛍️</div>
-              <h3 class="font-display text-2xl font-bold mb-4 text-primary"
-                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Market STALL HOLDERS</h3>
-              <p class="text-secondary mb-6 font-light">Showcase and sell Japanese-inspired crafts, products, or
-                artwork. Be part of our vibrant festival marketplace.</p>
-              <ul class="space-y-2 text-secondary text-sm font-light mb-6">
-                <li>✓ Prime festival location</li>
-                <li>✓ Tables &amp; setup provided</li>
-                <li>✓ Large audience reach</li>
-              </ul>
-              <button class="btn-primary px-6 py-3 rounded-full font-semibold w-full"
-                onclick="openVolunteerForm('stall')"
-                style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
-                Book Your Stall
-              </button>
-            </div>
-            <div class="card-japanese rounded-3xl p-8 card-hover" style="background: rgba(255, 255, 255, 0.867);">
-              <div class="text-5xl mb-6">🌸</div>
-              <h3 class="font-display text-2xl font-bold mb-4 text-primary"
-                style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Welcome Ambassadors</h3>
-              <p class="text-secondary mb-6 font-light">Greet guests, provide information, and ensure everyone feels
-                welcome. Be the friendly face of our festival.</p>
-              <ul class="space-y-2 text-secondary text-sm font-light mb-6">
-                <li>✓ All-day or half-day shifts</li>
-                <li>✓ Meet new people</li>
-                <li>✓ Festival t-shirt included</li>
-              </ul>
-              <button class="btn-primary px-6 py-3 rounded-full font-semibold w-full"
-                onclick="openVolunteerForm('ambassador')"
-                style="background: linear-gradient(135deg, rgb(255, 159, 176) 0%, rgb(255, 183, 197) 100%);">
-                Become an Ambassador
-              </button>
-            </div>
-          </div>
-          <div class="card-japanese rounded-3xl p-10 text-center" style="background: rgba(255, 255, 255, 0.867);">
-            <h3 class="font-display text-3xl font-bold mb-4 text-primary"
-              style="color: rgb(93, 31, 40); font-family: 'Playfair Display', serif;">Why Volunteer?</h3>
-            <div class="grid md:grid-cols-3 gap-8 mt-8">
-              <div>
-                <div class="text-4xl mb-3">💖</div>
-                <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">Make a Difference</h4>
-                <p class="text-secondary text-sm font-light">Support women and girls empowerment initiatives</p>
-              </div>
-              <div>
-                <div class="text-4xl mb-3">🌏</div>
-                <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">Cultural Exchange</h4>
-                <p class="text-secondary text-sm font-light">Learn about Japanese traditions firsthand</p>
-              </div>
-              <div>
-                <div class="text-4xl mb-3">👥</div>
-                <h4 class="font-bold text-lg mb-2 text-primary" style="color: rgb(93, 31, 40);">Build Community</h4>
-                <p class="text-secondary text-sm font-light">Connect with like-minded individuals</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <!-- End Get Involved Page -->
 
     <!-- Support Page -->
     <div id="page-support" class="page-content hidden">
@@ -707,8 +623,7 @@
             <ul class="space-y-2 text-secondary font-light">
               <li><a href="#schedule" class="hover:text-primary transition-colors">Program</a></li>
               <li><a href="#location" class="hover:text-primary transition-colors">Location</a></li>
-              <li><a href="#get-involved" class="hover:text-primary transition-colors"
-                  onclick="showPage('get-involved')">Get Involved</a></li>
+              <li><a href="#get-involved" class="hover:text-primary transition-colors">Get Involved</a></li>
               <!-- TODO: unhide later with proper copy -->
               <li><a hidden href="#support" class="hover:text-primary transition-colors"
                   onclick="showPage('support')">Support</a></li>
